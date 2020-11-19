@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block head %}
+    <link href="/bootstrap.min.css" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+{% if parent %}
+    <a href="/{{ parent }}">&lt;&lt; Parent Directory</a>
+{% endif %}
+
+
+<div class="list-group">
+    {% for path,dir in dirs %}
+        <a href="/{{ path }}" class="list-group-item list-group-item-action active">{{ dir }}</a>
+    {% endfor %}
+    {% for path,file in files %}
+        <a href="/{{ path }}" class="list-group-item list-group-item-action">{{ file }}</a>
+    {% endfor %}
+</div>
+
+{% endblock %}

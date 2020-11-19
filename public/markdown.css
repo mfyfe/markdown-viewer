@@ -1,0 +1,52 @@
+.important { color: #336699; }
+.frame {
+    width: 826px;
+    margin: auto;
+    margin-top: 16px;
+    color: #000;
+    background-color: #FFF
+}
+.markdown {
+    margin-left: 96px;
+    margin-right: 96px;
+    font-family: Arial;
+    font-size: 11pt;
+}
+.markdown strong {
+    font-weight: bold;
+}
+.markdown code {
+    font-family: Roboto Mono;
+    color: #000;
+}
+.markdown H1 {
+    font-size: 20pt;
+    font-weight: normal;
+}
+.markdown H2 {
+    font-size: 16pt;
+    font-weight: normal;
+    margin-top: 1.5rem;
+}
+.markdown H3 {
+    font-size: 14pt;
+    font-weight: normal;
+}
+/* Tables */
+.markdown TABLE {
+    border: 1px solid black;
+    width: 100%;
+}
+.markdown THEAD {
+    background-color: rgb(164, 194, 244);
+}
+.markdown THEAD TH {
+    border: 1px solid black;
+    font-weight: 400;
+    padding: 3px;
+}
+.markdown TBODY TD {
+    border: 1px solid black;
+    padding: 3px;
+}
+

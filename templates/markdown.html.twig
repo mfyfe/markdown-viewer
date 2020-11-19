@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block head %}
+    {{ parent() }}
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700,900" rel="stylesheet">
+    <link href="/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="/markdown.css" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="frame">
+        <div class="markdown">
+            {{ html|raw }}
+        </div>
+    </div>
+{% endblock %}
